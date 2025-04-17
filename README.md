@@ -1,1 +1,0 @@
-# nyt-cooking-parser
