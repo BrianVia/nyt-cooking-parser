@@ -1,0 +1,28 @@
+{
+  "name": "nyt-cooking-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx data/db/migrate.ts",
+    "db:ingest": "tsx scripts/ingestRecipes.ts",
+    "db:query-examples": "tsx data/db/queries.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "better-sqlite3": "^11.1.2",
+    "drizzle-orm": "^0.31.2",
+    "iso8601-duration": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "drizzle-kit": "^0.22.8",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
